@@ -1,0 +1,12 @@
+/* Section Banner */
+.banner{
+    min-height: calc(75vh - 96px);
+    background: url('https://via.placeholder.com/1500x2000');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.text-banner{
+    font-size: 60px;
+}
