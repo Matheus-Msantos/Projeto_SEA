@@ -23,3 +23,21 @@
     color: white;
     text-transform: uppercase;
 }
+
+/* ----- Section Docentes ----- */
+
+.docentes p{
+    text-align: center;
+}
+
+/* ----- Section Depoimentos ----- */
+
+.depoimentos h2{
+    text-align: center;
+}
+.card{
+    width: 18rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
