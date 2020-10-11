@@ -19,9 +19,26 @@
     font-size: 20px;
 }
 
+
 .btn a {
     color: white;
     text-transform: uppercase;
+}
+/* ----- Section Metodologia ----- */
+
+.metodo img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.metodo h2{
+    text-align: center;
+    margin-top: 20px;
+    margin-top: 10px;
+}
+.metodo p{
+    text-align: center;
+    color: white;
 }
 
 /* ----- Section Docentes ----- */
@@ -31,13 +48,7 @@
 }
 
 /* ----- Section Depoimentos ----- */
-
-.depoimentos h2{
+.depoimentos span{
     text-align: center;
-}
-.card{
-    width: 18rem;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+    color: white;
 }
