@@ -23,7 +23,7 @@
 </head>
 
 <body>
-    <header>
+    <header id="menu">
         <nav class="navbar navbar-light bg-tranparent">
             <a class="navbar-brand" href="#"><img src="https://via.placeholder.com/70/"> SEA - Star English Academy</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
@@ -35,10 +35,22 @@
                         <a class="nav-link" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Titulo2</a>
+                        <a class="nav-link" href="#sobre">Sobre</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Titulo3</a>
+                        <a class="nav-link" href="#metodo">Metodologia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#docentes">Docentes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#depoimentos">Depoimentos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testeNivel">Teste</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#matricula">Matricula</a>
                     </li>
                 </ul>
             </div>
@@ -63,7 +75,7 @@
             </button>
         </section>
 
-        <section class="sobre">
+        <section id="sobre">
             <div class="row">
                 <div class="col-10 d-flex mx-auto align-items-center ">
                     <img src="https://via.placeholder.com/70/">
@@ -86,7 +98,7 @@
             </div>
         </section>
 
-        <section class="metodo bg-primary py-5">
+        <section id="metodo" class="bg-primary py-5">
             <img src="https://via.placeholder.com/500x350/">
             <h2>Metodologia</h2>
             <p>
@@ -96,7 +108,7 @@
             </p>
         </section>
 
-        <section class="docentes py-5 mx-5">
+        <section id="docentes" class="py-5 mx-5">
             <div class="title-docentes d-flex justify-content-center">
                 <img src="https://via.placeholder.com/75/">
                 <h2 class="mt-3 ml-2">Nome</h2>
@@ -111,7 +123,8 @@
                 minima!
             </p>
         </section>
-        <section class="depoimentos bg-primary py-5">
+        <section id="depoimentos" class="bg-primary py-5">
+            <h2 class="pb-3">Depoimentos</h2>
             <div class="row">
                 <div class="mx-auto">
                     <div id="carouselDepoimentos" class='carousel slide' data-ride="carousel">
@@ -145,15 +158,70 @@
             <span class="d-block font-weight-bold">Make your English shine!</span>
         </section>
 
-        <section class="banner-testeNivel"></section>
+        <section id="testeNivel" class="banner-testeNivel"></section>
         <div class=" d-flex justify-content-center">
             <button type="btn" class="btn btn-link btn-primary  my-3">
                 <a href="#">Start</a>
             </button>
         </div>
-    </main>
-    <footer>
 
+        <section id="matricula" class="banner-matricula py-5">
+            <div class="row">
+                <div class="col-10 mx-auto">
+                    <span class="font-weight-bold">Informações e</span>
+                    <span class="h2">Matricula</span>
+                </div>
+            </div>
+            <div class="row">
+                <form class="mx-auto">
+                    <div class="col-10 py-2">
+                        <span>Nome</span>
+                        <input type="text" name="nome" placeholder="Ex: User1">
+                    </div>
+
+                    <div class="col-10 py-2">
+                        <span>Telefone</span>
+                        <input type="text" name="fone" placeholder="Ex: 11 91234-5678">
+                    </div>
+
+                    <div class="col-10 py-2">
+                        <span>Email</span>
+                        <input type="text" name="email" placeholder="Ex: User@email.com">
+                    </div>
+
+                    <div class="col-10 py-2">
+                        <span>Já estudou inglês?</span>
+                        <select>
+                            <option>Sim</option>
+                            <option>Não</option>
+                        </select>
+                    </div>
+
+                    <div class="col-10 py-2">
+                        <span>Quanto tempo?</span>
+                        <input type="text" name="tempoDeCurso" placeholder="Ex: 3 anos">
+                    </div>
+
+                    <div class="col-10 py-2">
+                        <span>Nota do teste de nivel</span>
+                        <input type="text" name="nota" placeholder="Ex: 7,50">
+                    </div>
+
+                    <div class="col-10 py-2">
+                        <span>Anexar arquivo (Teste de nivel)</span>
+                        <input type="file" name="MAX_FILE_SIZE" value="4194304">
+                    </div>
+
+                    <div class="d-flex justify-content-end pt-4">
+                        <input type="submit" value="Enviar">
+                    </div>
+
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="roda-pe">
+        <p>Todos os diretos reservado</p>
     </footer>
 
 </body>
