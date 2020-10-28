@@ -1,10 +1,11 @@
 /* ----- Menu ----- */
 #menu{
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
     background-color: rgba(255, 255, 255, .3);
+}
+
+.icon{
+    margin-top: 15px;
+    padding-left: 15px;
 }
 
 /* ----- Section Banner ----- */
@@ -63,6 +64,10 @@
     text-align: center;
 }
 
+h2{
+    text-align: center;
+}
+
 /* ----- Section Depoimentos ----- */
 
 #depoimentos h2{
@@ -102,9 +107,32 @@
 }
 
 /* ----- Section Roda-pé ----- */
-.roda-pe{
-    background-color: rgb(201, 201, 201);
+footer{
+    background-color: rgb(36, 39, 211);
+    padding: 15px;
 }
-.roda-pe p{
+
+footer h2{
+    text-align: center;
+    color: white;
+}
+
+footer a {
+    color: white;
+}
+
+footer a:hover{
+    color: black;
+}
+
+.icon-redes{
+    margin-top: 15px;
     text-align: center;
 }
+
+footer p{
+    text-align: center;
+    color: rgb(255, 255, 255, .1);
+    margin-top: 30px;
+}
+
