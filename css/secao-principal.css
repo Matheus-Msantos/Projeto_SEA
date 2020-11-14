@@ -1,3 +1,7 @@
+body{
+    background-color:#e4f1fe;
+}
+
 /* ----- Menu ----- */
 #menu {
     background-color: rgba(255, 255, 255, .3);
@@ -20,7 +24,7 @@
 
 /* ----- Section Banner ----- */
 .banner {
-    min-height: calc(75vh - 96px);
+    min-height: calc(95vh - 75px);
     background: url('../imagens/fantastic-seascape-with-ripples.jpg');
     background-repeat: no-repeat;
     background-position: center;
@@ -46,11 +50,13 @@
 /* ----- Section Sobre ----- */
 #sobre{
     padding: 30px;
+    
 }
 
 #sobre h2 {
     font-size: 26px;
     margin-bottom: 27px;
+    text-align: center;
 }
 
 .text-sobre {
@@ -62,7 +68,7 @@
 }
 
 #sobre img {
-    height: 55px;
+    height: 160px;
     padding: 5px;
 }
 
@@ -74,6 +80,7 @@
 
 #metodo h2 {
     text-align: center;
+    padding-top: 50px;
 }
 #metodo p {
     text-align: justify;
@@ -92,12 +99,25 @@
 
 /* ----- Banner secundário ----- */
 .banner-secundario {
-    min-height: calc(75vh - 96px);
-    background: url('https://via.placeholder.com/1000/');
+    min-height: calc(95vh - 75px);
+    background: url('../imagens/Grupo 15181.png');
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: contain;
+    
 }
+
+/* ----- Banner Terceiario ----- */
+.banner-terciario {
+    min-height: calc(95vh - 75px);
+    background: url('../imagens/Grupo 1518.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    
+}
+
+
 
 /* ----- Section Depoimentos ----- */
 #depoimentos h2 {
@@ -112,10 +132,14 @@
 /* ----- Section Teste de nivel ----- */
 .banner-testeNivel {
     min-height: calc(85vh - 100px);
-    background: url('https://via.placeholder.com/1500x2000');
+    background: url('../imagens/teste-nivel.PNG');
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
+}
+
+.btn {
+    font-size: 30px;
 }
 
 /* ----- Section Formulario ----- */
@@ -128,11 +152,11 @@
 }
 
 .banner-matricula {
-    min-height: calc(90vh - 100px);
-    background: url('https://via.placeholder.com/1500x2000');
+    min-width: calc(60vh - 60px);
+    background: url('../imagens/Grupo 1519.png');
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
 }
 
 /* ----- Section Roda-pé ----- */
@@ -165,3 +189,7 @@ footer p {
     margin-top: 30px;
 }
 
+.icon-55 {
+    height: 40px !important;
+    margin-bottom: 6px; 
+}
