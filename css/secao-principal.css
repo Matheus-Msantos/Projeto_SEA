@@ -140,10 +140,6 @@
     padding: 150px;
 }
 
-#matricula img { 
-    height: 78px;
-}
-
 #matricula input {
     border-radius: 10px;
 }
@@ -187,4 +183,5 @@ footer p {
 .icon-55 {
     height: 40px !important;
     margin-bottom: 6px; 
+    padding: 10px;
 }
