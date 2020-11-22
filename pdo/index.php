@@ -13,7 +13,7 @@ try {
 }
 
 
-$sql = 'SELECT ID_INTERESSADO, NOME, EMAIL FROM Interessado ORDER BY NOME';
+$sql = 'SELECT ID_INTERESSADO, NOME, EMAIL FROM Interessado ORDER BY ID_INTERESSADO';
 foreach ($db->query($sql) as $registro) {
     echo "ID: {$registro['ID_INTERESSADO']} NOME: {$registro['NOME']} EMAIL: {$registro['EMAIL']} <br>";
 }
