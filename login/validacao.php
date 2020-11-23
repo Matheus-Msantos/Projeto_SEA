@@ -3,5 +3,5 @@
 session_start();
 
 if ( !isset($_SESSION['login']) ) {
-    include 'Location: /';
+    header ('Location: index.php');
 }
