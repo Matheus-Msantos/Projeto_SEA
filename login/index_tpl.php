@@ -26,7 +26,7 @@
 <body>
     <main>
         <div class="banner-login d-flex align-items-center justify-content-center">
-            <form method="post" action="index.php">
+            <form method="POST" action="index.php">
                 <img class="icon" src="../imagens/capitao.png">
                 <div class="d-block text-center h6"> 
                     <?php 
