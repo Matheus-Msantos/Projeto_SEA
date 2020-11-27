@@ -1,16 +1,22 @@
 <?php
+//Trás das pastas
+require 'consulta_interessado.php';
 require 'validacao.php';
+
+//Leva para as pastas
 include 'menu.php';
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-     <!-- CSS only -->
-     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/secao-principal.css">
     <link rel="stylesheet" href="css/secao-principal.css">
     <!-- JS, Popper.js, jQuery and fonts-->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -25,8 +31,56 @@ include 'menu.php';
     <script src="https://kit.fontawesome.com/4d52201842.js" crossorigin="anonymous"></script>
 
 </head>
-<body>
-    <h1>Teste</h1>
-</body>
-</html>
 
+<body>
+    <section>
+        <table border="2">
+            <tr>
+                <th>Id</th>
+                <th>Nome</th>
+                <th>Email</th>
+                <th>Telefone</th>
+                <th>Estudou Ingles?</th>
+                <th>Quanto tempo?</th>
+                <th>Nota do teste</th>
+                <th>imagem do teste</th>
+                <th>Mensagem</th>
+                <th>Data</th>
+            </tr>
+
+            <?php
+            
+                if ( is_array($tabela) ){
+                    foreach ($tabela as $id => $reg) {
+                        echo"
+                            <tr>
+                                <td> $id </td>
+                                <td> {$reg['nome']} </td>
+                                <td> {$reg['telefone']} </td>
+                                <td> {$reg['email']} </td>
+                                <td> {$reg['estudouIngles']} </td>
+                                <td> {$reg['quantoTempo']} </td>
+                                <td> {$reg['nota']} </td>
+                                <td> {$reg['imagem']} </td>
+                                <td> {$reg['mensagem']} </td>
+                                <td> {$reg['data']} </td>
+                                <td> <a href='#'>Matricular</a> </td>
+                                <td> <a href='editar_interessado.php?id=$id'>editar</a> </td>
+                                <td> <a href='apagar.php?id=$id'>Apagar</a> </td>
+                            </tr>
+                        ";
+                    }
+                }else {
+                    echo"
+                        <tr>
+                            <td colspan='13'>Não há dados</td>
+                        </tr> 
+                    ";
+                }
+            ?>
+
+        </table>
+    </section>
+</body>
+
+</html>

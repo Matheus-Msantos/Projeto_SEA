@@ -2,6 +2,7 @@
 
 session_start();
 
+//Tras das pastas
 require_once 'db.php';
 
 if ( isset($_SESSION['login']) ) {
@@ -25,6 +26,8 @@ if ( isset($_SESSION['login']) ) {
         include 'index_tpl.php';
     }
 } else{
+    
+    //Leva para as pastas
     include 'index_tpl.php';
 }
 
