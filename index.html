@@ -245,25 +245,25 @@
 
         <section id="matricula" class="banner-matricula">
             <div class="row mt-5 pt-5">
-                <form class="mx-auto">
+                <form class="mx-auto" method="POST" action="login/grava_interessado.php">
                     <div class="col-10 py-2">
                         <span class="d-block pb-2">Nome</span>
-                        <input type="text" name="nome" placeholder="Nome completo" size="40">
+                        <input type="text" id="nome" name="nome" placeholder="Nome completo" size="40">
                     </div>
 
                     <div class="col-10 py-2">
                         <span class="d-block pb-2">Telefone</span>
-                        <input type="text" name="fone" placeholder="(DD) 1111-11111" size="40">
+                        <input type="text" id="telefone" name="telefone" placeholder="(DD) 1111-11111" size="40">
                     </div>
 
                     <div class="col-10 py-2">
                         <span class="d-block pb-2">Email</span>
-                        <input type="text" name="email" placeholder="Usuario@email.com" size="40">
+                        <input type="text" id="email" name="email" placeholder="Usuario@email.com" size="40">
                     </div>
 
                     <div class="col-10 py-2">
                         <span class="d-block pb-2">Já estudou inglês?</span>
-                        <select>
+                        <select id="estudouIngles" name="estudouIngles">
                             <option>Sim</option>
                             <option>Não</option>
                         </select>
@@ -271,17 +271,28 @@
 
                     <div class="col-10 py-2">
                         <span class="d-block pb-2">Quanto tempo?</span>
-                        <input type="text" name="tempoDeCurso" placeholder="3 anos" size="40">
+                        <input type="text" id="tempoDeCurso" name="tempoDeCurso" placeholder="3 anos" size="40">
                     </div>
 
                     <div class="col-10 py-2">
                         <span class="d-block pb-2">Nota do teste de nivel</span>
-                        <input type="text" name="nota" placeholder="7,50" size="40">
+                        <input type="text" id="nota" name="nota" placeholder=" 7" size="40">
                     </div>
 
                     <div class="col-10 py-2">
                         <span class="d-block pb-2">Anexar arquivo (Teste de nivel)</span>
-                        <input type="file" name="MAX_FILE_SIZE" value="4194304" size="40">
+                        <input type="file" id="imagemTeste" name="MAX_FILE_SIZE" value="4194304" size="40">
+                    </div>
+
+                    <div class="col-10 py-2">
+                        <span class="d-block pb-2">Mensagem</span>
+                        <input type="textarea" id="mensagem" name="mensagem" placeholder="Mande uma mensagem para nós"
+                            size="65">
+                    </div>
+
+                    <div class="col-10 py-2">
+                        <span class="d-block pb-2">Data</span>
+                        <input type="text" id="data" name="data" placeholder="YYYY/MM/DD" size="40">
                     </div>
 
                     <div class="col-11 d-flex justify-content-end pt-4">
