@@ -16,8 +16,7 @@ include 'menu.php';
     <!-- CSS only -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/secao-principal.css">
-    <link rel="stylesheet" href="css/secao-principal.css">
+    <link rel="stylesheet" href="../css/interessado.css">
     <!-- JS, Popper.js, jQuery and fonts-->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -33,13 +32,13 @@ include 'menu.php';
 </head>
 
 <body>
-    <section>
-        <table border="2">
+    <section class="banner-interessado">
+        <table>
             <tr>
                 <th>Id</th>
                 <th>Nome</th>
-                <th>Email</th>
                 <th>Telefone</th>
+                <th>Email</th>
                 <th>Estudou Ingles?</th>
                 <th>Quanto tempo?</th>
                 <th>Nota do teste</th>
@@ -65,8 +64,8 @@ include 'menu.php';
                                 <td> {$reg['mensagem']} </td>
                                 <td> {$reg['data']} </td>
                                 <td> <a href='#'>Matricular</a> </td>
-                                <td> <a href='editar_interessado.php?id=$id'>editar</a> </td>
-                                <td> <a href='apagar.php?id=$id'>Apagar</a> </td>
+                                <td> <a href='editar_interessado.php?id=$id'><i class='icon-editar fas fa-user-edit'></i></a> </td>
+                                <td> <a href='apagar.php?id=$id'><i class='icon-apagar fas fa-trash-alt'></i></a> </td>
                             </tr>
                         ";
                     }
