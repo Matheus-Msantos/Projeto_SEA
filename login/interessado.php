@@ -11,6 +11,7 @@ include 'menu.php';
 <html lang="pt-br">
 
 <head>
+
     <meta charset="UTF-8">
     <title>Document</title>
     <!-- CSS only -->
@@ -44,6 +45,7 @@ include 'menu.php';
                 <th>Nota do teste</th>
                 <th>imagem do teste</th>
                 <th>Mensagem</th>
+                <th>Registro</th>
                 <th>Data</th>
             </tr>
 
@@ -62,8 +64,8 @@ include 'menu.php';
                                 <td> {$reg['nota']} </td>
                                 <td> {$reg['imagem']} </td>
                                 <td> {$reg['mensagem']} </td>
+                                <td> {$reg['registro']} </td>
                                 <td> {$reg['data']} </td>
-                                <td> <a href='#'>Matricular</a> </td>
                                 <td> <a href='editar_interessado.php?id=$id'><i class='icon-editar fas fa-user-edit'></i></a> </td>
                                 <td> <a href='apagar.php?id=$id'><i class='icon-apagar fas fa-trash-alt'></i></a> </td>
                             </tr>

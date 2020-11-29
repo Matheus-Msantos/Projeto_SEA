@@ -11,10 +11,11 @@ if ( isset($_POST['id']) ) {
     $estudouIngles =  $_POST['estudouIngles'];
     $nota = $_POST['nota'];
     $imagem = $_POST['MAX_FILE_SIZE'];
+    $registro = $_POST['registro'];
     $mensagem = $_POST['mensagem'];
     $data = $_POST['data'];
 
-    $objStmt = $db->prepare(" UPDATE Interessado SET nome = :nome, telefone = :telefone, email = :email,  estudouIngles = :estudouIngles, nota = :nota, imagem = :MAX_FILE_SIZE, mensagem = :mensagem, data = :data WHERE id = :id ");
+    $objStmt = $db->prepare(" UPDATE Interessado SET nome = :nome, telefone = :telefone, email = :email,  estudouIngles = :estudouIngles, nota = :nota, registro = :registro, imagem = :MAX_FILE_SIZE, mensagem = :mensagem, data = :data WHERE id = :id ");
 
     $objStmt->bindParam(':id', $id);
     $objStmt->bindParam(':nome', $nome);
@@ -24,6 +25,7 @@ if ( isset($_POST['id']) ) {
     $objStmt->bindParam(':nota', $nota);
     $objStmt->bindParam(':MAX_FILE_SIZE', $imagem);
     $objStmt->bindParam(':mensagem', $mensagem);
+    $objStmt->bindParam(':registro', $registro);
     $objStmt->bindParam(':data', $data);
 
     if ( $objStmt->execute() ) {
@@ -40,7 +42,7 @@ $id = preg_replace('/\D/', '', $_GET['id']);
 
 $interessado = array();
 
-$consulta = (" SELECT id, nome, telefone, email, estudouIngles, quantoTempo, nota, imagem, mensagem, data FROM Interessado WHERE id = $id");
+$consulta = (" SELECT id, nome, telefone, email, estudouIngles, quantoTempo, nota, imagem, mensagem, registro, data FROM Interessado WHERE id = $id");
 
 foreach ( $db->query( $consulta ) as $registro ) {
     $interessado = $registro;

@@ -4,8 +4,8 @@
 require_once 'db.php';
 
 //Preparando consulta
-$objStmt = $db->prepare(' INSERT INTO Interessado (nome, telefone, email, estudouIngles, quantoTempo, nota, imagem, mensagem, data) 
-                          VALUES (:nome, :telefone, :email, :estudouIngles, :tempoDeCurso,  :nota, :imagem, :mensagem, :data) ');
+$objStmt = $db->prepare(' INSERT INTO Interessado (nome, telefone, email, estudouIngles, quantoTempo, nota, imagem, mensagem, registro, data) 
+                          VALUES (:nome, :telefone, :email, :estudouIngles, :tempoDeCurso,  :nota, :imagem, :mensagem, :registro, :data) ');
 
 
 //Valor enviado do formúlario 
@@ -17,6 +17,7 @@ $objStmt->bindParam(':tempoDeCurso', $_POST['tempoDeCurso']);
 $objStmt->bindParam(':nota', $_POST['nota']);
 $objStmt->bindParam(':imagem', $_POST['MAX_FILE_SIZE']);
 $objStmt->bindParam(':mensagem', $_POST['mensagem']);
+$objStmt->bindParam(':registro', $_POST['registro']);
 $objStmt->bindParam(':data', $_POST['data']);
 
 if ( $objStmt->execute() ) {

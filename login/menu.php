@@ -32,14 +32,11 @@
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="matriculados.php">Matriculados</a>
-                    </li>
-                    <li class="nav-item mr-5">
+                    <li class="nav-item mr-4">
                         <a class="nav-link" href="interessado.php">Interessados</a>
                     </li>
                     <li class="nav-item">
-                        <a class=" nav-link" href="sair.php"><i class="fa-md fas fa-sign-out-alt"></i></a>
+                        <a class=" nav-link" href="sair.php"><i class="fa-lg fas fa-sign-out-alt mt-2"></i></a>
                     </li>
                 </ul>
             </div>

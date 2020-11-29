@@ -2,10 +2,7 @@
 .banner-interessado {
     min-height: calc(100vh - 75px);
     background: url('../imagens/background-interessado.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed; 
+    background-repeat: no-repeat; 
     background-image: linear-gradient(to bottom, #e4f1fe, #c5eff7, #89c4f4);
     
 }
