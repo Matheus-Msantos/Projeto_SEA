@@ -27,6 +27,9 @@
                 echo $msg;
             ?> 
         </h1>
+        <div class="text-center h5 pt-5">
+            <a href="../index.html">Voltar para o nosso site!</a>
+        </div>
     </main>
 </body>
 </html>
